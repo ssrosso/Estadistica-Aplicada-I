@@ -1,3 +1,5 @@
+#Simulacion adjunta al Informe del Trabajo Practico NÂº1 de Estadistica Aplicada
+#1ÂºCuatrimestre 2021
 set.seed(5)
 
 samples <- 50                         #Cantidad de muestras
@@ -12,18 +14,18 @@ for(i in 1:samples){
 }
 
 #hist(maximos, main = "Histograma", 
-#     xlab = "Máximos Observados", ylab = "Frecuencia",
+#     xlab = "MÃ¡ximos Observados", ylab = "Frecuencia",
 #     col = "cyan", breaks = 10)
 #abline(v=mean(maximos),col="red")
 
 hist(maximos, main = "Histograma de densidades", 
-     xlab = "Máximos Observados", ylab = "Densidad",
+     xlab = "MÃ¡ximos Observados", ylab = "Densidad",
      col = "cyan", breaks = 10, freq=FALSE)
 abline(v=mean(maximos),col="red")
 lines(density(maximos))
 
 boxplot(maximos, main = "Diagrama de Cajas y Bigotes",
-       xlab = "Máximos Observados",
+       xlab = "MÃ¡ximos Observados",
        col = "orange", horizontal = TRUE)
 abline(v=mean(maximos),col="red")  
 
@@ -34,3 +36,5 @@ media <- sum(maximos)/50
 varianza <- (1/49)*sum((maximos-mean(maximos))^2)
 #sd(maximos)
 desvio_muestral <- varianza^(1/2)
+
+#Por Sebastian Rosso y Maria Spaventa
